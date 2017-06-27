@@ -8,6 +8,14 @@ public class AddressBookApplication {
 		ab.setCity("Evergreen");
 		ab.setState("Kentucky");
 		ab.setZip("12345");
+		System.out.println("The phone number is: " + ab.getPhone());
+		//bug with () and -
+		ab.setPhone("(301) 324-5252");
+		System.out.println("The phone number is: " + ab.getPhone());
+		System.out.println("The email is: " + ab.getEmail());
+		//bug with () and -
+		ab.setEmail("john@smith.com");
+		System.out.println("The email is: " + ab.getEmail());
 		//When she wants to print the name she would call:
 		String mailto = ab.mailLabel();
 		System.out.println(mailto);
